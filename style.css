@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    width: 30vw;
+    height: 95vh;
+    margin: 10px auto; 
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#my-heading{
+    width: 99%;
+    height: 10%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#interactive-boxes{
+    width: 99%;
+    height: 65%;
+    /* border: 1px solid red ; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#interactive-boxes>div{
+    border: 2px solid gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+#interactive-box1,#interactive-box3 {
+    width: 100%;
+    height: 20%;    
+}
+
+#interactive-boxes>#interactive-box2{
+    width: 100%;
+    height: 50%;
+    border-color: rgb(10, 90, 65);
+    background-color:rgb(10, 90, 65, 0.08) ;
+}
+
+.pair-and-price{
+    width: 98%;
+    height: 35%;
+    /* border: 1px solid yellowgreen; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pair-and-price>input{
+    width: 3.5%;
+    height: 20%;
+    accent-color: rgb(10, 90, 65);
+}
+
+.pair-and-price>div{
+    width: 30%;
+    height: 95%;
+    align-content: center;
+}
+
+.pair-and-price>s{
+    width: 20%;
+    height: 95%;
+    align-content: center;
+    font-size: small;
+}
+
+.pair-and-price>h4{
+    width: 30%;
+    height: 95%;
+    align-content: center;
+    text-align: end;
+}
+
+.size-and-colour{
+    width: 55%;
+    height: 55%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-self: flex-start;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+#interactive-box1-size-colour, #interactive-box3-size-colour{
+    display: none;
+}
+
+#interactive-box1-pair-price, #interactive-box3-pair-price{
+    height: 90%;
+}
+
+.serial-number{
+    width: 20%;
+    height: 95%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-self: first baseline;
+}
+
+.size{
+    width: 35%;
+    height: 95%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-self: first baseline;
+}
+
+.size>select{
+    width: 80%;
+}
+
+.colour-given{
+    width: 35%;
+    height: 95%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-self: first baseline;
+}
+
+.colour-given>select>option:nth-of-type(2){
+    color: cyan;
+    font-weight: bolder;
+}
+
+.colour-given>select>option:nth-of-type(3){
+    color: blue;
+    font-weight: bolder;
+}
+
+.colour-given>select>option:nth-of-type(4){
+    color: violet;
+    font-weight: bolder;
+}
+
+#offer-and-totalprice{
+    width: 99%;
+    height: 5%;
+    /* border: 1px solid violet; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#offer-and-totalprice>:first-child{
+    animation-name: my-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes my-animation{
+    0% {
+        color: rgb(10, 90, 65);;
+    }
+
+    25% {
+        color: aqua;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    75% {
+        color: red;
+    }
+
+    100% {
+        color: rgb(10, 90, 65);;
+    }
+}
+
+#add-to-cart{
+    width: 99%;
+    height: 10%;
+    /* border: 1px solid cyan; */
+    /* border-radius: 5px; */
+}
+
+#add-button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(10, 90, 65);
+    align-content: center;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    &:hover{
+        cursor: pointer;
+        background-color: rgb(0, 0, 255, 0.9);
+    }
+}
+
+#my-copyright{
+    width: 99%;
+    height: 5%;
+    /* border: 1px solid orangered; */
+    align-content: center;
+    text-align: end;
+    font-style: italic;
+}
+
